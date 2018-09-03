@@ -36,8 +36,7 @@ public class Busca {
                 //System.exit(0);
                      
                 if (procurado.compareTo(e.getCep()) == 0){//if 1 achou o endereço
-                
-                    System.out.println("Endereço de cep " + procurado + "encontrado");
+              
                     break;
                 }
                                 
@@ -57,7 +56,8 @@ public class Busca {
              
             }
             
-            System.out.println(count);
+            System.out.println("Endereço do cep " + procurado + " , " + e.getLogradouro()+ " , " + e.getBairro() + " , " + e.getEstado() + " encontrado");
+            System.out.println("Número de iterações " + count);
         }
         
         catch(IOException ex){
